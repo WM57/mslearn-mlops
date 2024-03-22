@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/Walid/code/WM57/mslearn-mlops/mlruns/0/98cafaae565d405688951a2c2b8ce427/artifacts
+end_time: 1710351817216
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 98cafaae565d405688951a2c2b8ce427
+run_name: ambitious-fox-576
+run_uuid: 98cafaae565d405688951a2c2b8ce427
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710351812833
+status: 3
+tags: []
+user_id: Walid

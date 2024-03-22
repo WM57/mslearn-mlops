@@ -7,13 +7,16 @@ import os
 import pandas as pd
 
 from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import train_test_split
 
-
+import mlflow
 # define functions
+
+
 def main(args):
-    # TO DO: enable autologging
+    # autolog
 
-
+    mlflow.autolog()
     # read data
     df = get_csvs_df(args.training_data)
 
@@ -33,7 +36,10 @@ def get_csvs_df(path):
     return pd.concat((pd.read_csv(f) for f in csv_files), sort=False)
 
 
-# TO DO: add function to split data
+def split_data(df):
+    X, y = df[['Pregnancies', 'PlasmaGlucose', 'DiastolicBloodPressure', 'TricepsThickness',
+               'SerumInsulin', 'BMI', 'DiabetesPedigree', 'Age']].values, df['Diabetic'].values
+    return train_test_split(X, y, test_size=0.30, random_state=0)
 
 
 def train_model(reg_rate, X_train, X_test, y_train, y_test):
@@ -46,7 +52,7 @@ def parse_args():
     parser = argparse.ArgumentParser()
 
     # add arguments
-    parser.add_argument("--training_data", dest='training_data',
+    parser.add_argument("--training_data", dest="training_data", default="experimentation/data/",
                         type=str)
     parser.add_argument("--reg_rate", dest='reg_rate',
                         type=float, default=0.01)
@@ -57,15 +63,18 @@ def parse_args():
     # return args
     return args
 
+
 # run script
 if __name__ == "__main__":
     # add space in logs
     print("\n\n")
     print("*" * 60)
 
+    print(os.getcwd())
+
     # parse args
     args = parse_args()
-
+    print("ARGS", args, type(args))
     # run main function
     main(args)
 

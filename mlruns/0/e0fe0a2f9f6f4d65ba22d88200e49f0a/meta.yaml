@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/Walid/code/WM57/mslearn-mlops/mlruns/0/e0fe0a2f9f6f4d65ba22d88200e49f0a/artifacts
+end_time: 1710351779657
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e0fe0a2f9f6f4d65ba22d88200e49f0a
+run_name: adaptable-ox-439
+run_uuid: e0fe0a2f9f6f4d65ba22d88200e49f0a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710351774970
+status: 3
+tags: []
+user_id: Walid

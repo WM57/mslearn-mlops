@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/Walid/code/WM57/mslearn-mlops/mlruns/0/d84f5aef0eb046e6a34cf5432b5b34a0/artifacts
+end_time: 1710350863836
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d84f5aef0eb046e6a34cf5432b5b34a0
+run_name: legendary-pig-282
+run_uuid: d84f5aef0eb046e6a34cf5432b5b34a0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710350858807
+status: 3
+tags: []
+user_id: Walid

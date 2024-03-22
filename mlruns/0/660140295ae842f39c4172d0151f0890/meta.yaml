@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/Walid/code/WM57/mslearn-mlops/mlruns/0/660140295ae842f39c4172d0151f0890/artifacts
+end_time: 1710351725926
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 660140295ae842f39c4172d0151f0890
+run_name: entertaining-ray-619
+run_uuid: 660140295ae842f39c4172d0151f0890
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710351721534
+status: 3
+tags: []
+user_id: Walid

@@ -1,15 +1,19 @@
-$schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
-code: model
+$schema: https://azuremlschemas.azureedge.net/latest/environment.schema.json
 command: >-
-  python 
-  --
-  --
+  python train.py 
+  --training_data ${{inputs.training_data}} 
+  --reg_rate ${{inputs.reg_rate}}
 inputs:
   training_data: 
-    type: uri_folder 
-    path: 
+    type: "uri_folder"
+    path: "data"
   reg_rate: 0.01
-environment: azureml:AzureML-sklearn-0.24-ubuntu18.04-py37-cpu@latest
-compute: 
-experiment_name: 
-description: 
+code: model
+#environment: 
+  #image: azureml://locations/eastus/workspaces/73d716df-63bc-4b82-97b7-b6524681ced1/environments/wal
+  #image: 73d716df63bc4b8297b7b6524681ced1:sklearn@latest
+#  image: azureml:AzureML-sklearn-1.0-ubuntu20.04-py38-cpu
+environment: azureml:AzureML-sklearn-1.0-ubuntu20.04-py38-cpu
+experiment_name: test
+description: test
+compute: waldev-vm
