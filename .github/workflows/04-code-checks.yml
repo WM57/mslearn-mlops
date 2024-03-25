@@ -35,8 +35,3 @@ jobs:
         - name: run pytest
           run: |
             python -m pytest tests/
-<<<<<<< HEAD
-        
-=======
-        
->>>>>>> refs/remotes/origin/main
