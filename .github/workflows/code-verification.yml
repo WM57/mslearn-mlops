@@ -1,6 +1,9 @@
 name: verification
 
+
 on: 
+    workflow_run: 
+        types: completed 
     pull_request:
         types: opened
 jobs:
