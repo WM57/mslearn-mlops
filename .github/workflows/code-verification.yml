@@ -1,0 +1,12 @@
+name: verification
+
+on: 
+    pull_request:
+jobs:
+    job1:
+        name: echo
+        runs-on: ubuntu-latest
+        steps:
+        - name: test
+          run: |
+                echo "Will add code checks here in next challenge"
