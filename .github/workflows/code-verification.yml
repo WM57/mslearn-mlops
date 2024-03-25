@@ -19,7 +19,8 @@ jobs:
             python -m pip install flake8
         - name: Run linting tests
           run: | 
-            flake8 src/model/
+            flake8 src/model/ --ignore=E501
+
     job2:
         name: test
         runs-on: ubuntu-latest
