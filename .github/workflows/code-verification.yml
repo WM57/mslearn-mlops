@@ -20,7 +20,7 @@ jobs:
             python -m pip install flake8
         - name: Run linting tests
           run: | 
-            flake8 src/model/ --ignore=E501, E226
+            flake8 src/model/ --ignore=E501,E226
 
     job2:
         name: test
