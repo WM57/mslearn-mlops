@@ -18,9 +18,7 @@ jobs:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
     - name: Jobs AML
       run: |
-        az ml job create --file job.yml \ 
-        --resource-group diabetes-dev-rg \
-        --workspace-name aml-diabetes-dev
+        az ml job create --file job.yml --resource-group diabetes-dev-rg --workspace-name aml-diabetes-dev
   production:
     environment: production
     runs-on: ubuntu-latest
@@ -35,9 +33,7 @@ jobs:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
     - name: Jobs AML
       run: |
-        az ml job create --file job2.yml \ 
-        --resource-group diabetes-dev-rg \
-        --workspace-name aml-diabetes-dev   
+        az ml job create --file job2.yml --resource-group diabetes-dev-rg --workspace-name aml-diabetes-dev   
 
 
 
