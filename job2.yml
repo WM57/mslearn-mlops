@@ -5,7 +5,7 @@ command: >-
   --reg_rate ${{inputs.reg_rate}}
 inputs:
   training_data: 
-    type: "uri_folder"
+    type: "mltable"
     path: "diabetes-prod"
   reg_rate: 0.01
 code: src/model/
