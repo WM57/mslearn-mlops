@@ -13,7 +13,8 @@ code: src/model/
   #image: azureml://locations/eastus/workspaces/73d716df-63bc-4b82-97b7-b6524681ced1/environments/wal
   #image: 73d716df63bc4b8297b7b6524681ced1:sklearn@latest
 #  image: azureml:AzureML-sklearn-1.0-ubuntu20.04-py38-cpu
-environment: azureml:AzureML-sklearn-1.0-ubuntu20.04-py38-cpu
+#environment: azureml:AzureML-sklearn-1.0-ubuntu20.04-py38-cpu
+environment: azureml:wal
 experiment_name: test_dev
 description: test
 compute: waldev-vm
