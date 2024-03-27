@@ -8,7 +8,7 @@ inputs:
     type: "uri_folder"
     path: "data"
   reg_rate: 0.01
-code: model
+code: src/model/
 #environment: 
   #image: azureml://locations/eastus/workspaces/73d716df-63bc-4b82-97b7-b6524681ced1/environments/wal
   #image: 73d716df63bc4b8297b7b6524681ced1:sklearn@latest
