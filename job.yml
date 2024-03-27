@@ -6,7 +6,7 @@ command: >-
 inputs:
   training_data: 
     type: "uri_folder"
-    path: "data"
+    path: "diabetes-dev"
   reg_rate: 0.01
 code: src/model/
 #environment: 
