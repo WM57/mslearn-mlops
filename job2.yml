@@ -6,7 +6,7 @@ command: >-
 inputs:
   training_data: 
     type: "mltable"
-    path: "diabetes-prod"
+    path: "azureml:diabetes-prod:1"
   reg_rate: 0.01
 code: src/model/
 #environment: 
